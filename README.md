@@ -106,6 +106,12 @@ face. Press A for smile variation, B for frown variation, and AB for random vari
 Description: Scorekeeping program which records the score of two players + amount of ties. Press A to increment/display player one score, B to 
 increment/display player 2 score, and AB to record/display ties   
 
+## v0.04
+
+--program_link--
+Desciption: 2 player Game of rock paper scissors for micro-bit, on the program's start press the a and b buttons to cycle through player 1's
+input and then press the AB button to switch to player 2. After player 2 repeats the same process, Press the ab button and either the a or 
+b button to see the games result.   
 
 
 ## Designs
