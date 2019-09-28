@@ -96,6 +96,10 @@ Description:  micro_pet#1.js turns the bcc micro bit into a nervious shifty char
 
 ### v0.02
 
+[Algorithms]()
+Description : A program which depending on input from the a, b and ab buttons of the microbit, displays different variations of a smiling face and frowning
+face. Press A for smile variation, B for frown variation, and AB for random variation.   
+ 
 
 ## v0.03
 
