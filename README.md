@@ -181,6 +181,11 @@ Description: A program which converts user selected decimal values to binary,
 On start: press the A and B buttons to cycle through a value from 0 to 255,
 To see binary equilivant starting from the least significant bit, press the AB button
 
+## v.10
+[radio]()
+Description: -sends out radio packets to other micro bits, which upon recieving displays the contents of the recieved packet.
+Press the A button to send out a packet containing the string "marco"  +random noise(not an error, I was getting bored)
+Press the B button to send out a packet containing the string "polo" 
 
 
 #### Goal
