@@ -168,7 +168,7 @@ The A button activates led randomization and the B button toggles a smiley face.
 
 
 ## v.08 
-[booleans]()
+[booleans](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/Coin%20flip%20bool%20comparison%20program%2C%20%238%20-!)
 Description: A simple coin flip game which randomly generates two boolean values and compares them with each other. In the case of a tie, player 2 gains a point, and in the case of
 different values, player 1 gains a point. 
 The A button generates and compares the two boolean values, and returns the result of the comparasion. 
