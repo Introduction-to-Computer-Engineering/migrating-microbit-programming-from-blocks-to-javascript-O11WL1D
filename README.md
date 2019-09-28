@@ -119,8 +119,8 @@ Desciption: A program which utilizes looping to toggle each led of the micro bit
 
 
 
-## ------------------------------------ v.06
-##[Midterm project](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/Midterm%20project%20code%2C%20program%20%236)
+## ------------------------------------ v.06 [Midterm project](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/Midterm%20project%20code%2C%20program%20%236)----------------------
+
 
 ## Description:
 The fitness gram pacer pal program serves to turn the bbc Mircobit into a supplementary tool
