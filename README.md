@@ -90,7 +90,7 @@ _**Note:** Add your program descriptions below._
 
 ### v0.01
 
-[First micro bit program]() 
+[First micro bit program](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/micro%20pet%20program%2C%20project%20%231) 
 Description:  micro_pet#1.js turns the bcc micro bit into a nervious shifty character who endlessly scans the room for witnesses
  
 
