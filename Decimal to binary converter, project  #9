@@ -1,0 +1,75 @@
+let ussr_inputii = 0;
+
+let rem = 1;
+let div = 12;
+let x = 1;
+let phase = 0;
+//first the user selects a value via a+b buttons, and then when a and b are pressed simultaniously the numbers binary representation
+//is displayed bit by bit, starting from the lsb. 
+
+
+input.onButtonPressed(Button.A, function () {
+    if (phase == 0) {
+        if (ussr_inputii != 255) { ussr_inputii = ussr_inputii + 1; }
+        basic.showNumber(ussr_inputii);
+
+
+    }
+
+
+
+    if (phase == 1) {
+
+        for (; x != 0;) {
+            //console.log(ussr_inputii)
+            rem = (ussr_inputii % 2)
+            if (rem == 1) {
+                basic.showString(" 1");
+                ussr_inputii = (ussr_inputii / 2) - .5
+
+            }
+
+            else { basic.showString(" 0"); ussr_inputii = ussr_inputii / 2 }
+
+            if (ussr_inputii == 0) { x = 0 }
+        }
+    }
+})
+
+
+
+
+input.onButtonPressed(Button.B, function () {
+    if (phase == 0) {
+
+        if (ussr_inputii != 0) { ussr_inputii = ussr_inputii - 1; }
+        basic.showNumber(ussr_inputii);
+    }
+
+
+
+
+})
+
+
+
+
+input.onButtonPressed(Button.AB, function () {
+    for (; x != 0;) {
+        //console.log(ussr_inputii)
+        rem = (ussr_inputii % 2)
+        if (rem == 1) {
+            basic.showString(" 1");
+            ussr_inputii = (ussr_inputii / 2) - .5
+
+        }
+
+        else { basic.showString(" 0"); ussr_inputii = ussr_inputii / 2 }
+
+        if (ussr_inputii == 0) { x = 0 }
+    }
+
+})
+
+
+

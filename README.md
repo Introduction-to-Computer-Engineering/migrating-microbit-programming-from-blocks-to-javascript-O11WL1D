@@ -172,7 +172,14 @@ The A button activates led randomization and the B button toggles a smiley face.
 Description: A simple coin flip game which randomly generates two boolean values and compares them with each other. In the case of a tie, player 2 gains a point, and in the case of
 different values, player 1 gains a point. 
 The A button generates and compares the two boolean values, and returns the result of the comparasion. 
-Pressing the AB button will display the two players scores.  
+Pressing the AB button will display the two players scores.
+
+
+## v.09
+[Binary]()
+Description: A program which converts user selected decimal values to binary, 
+On start: press the A and B buttons to cycle through a value from 0 to 255,
+To see binary equilivant starting from the least significant bit, press the AB button
 
 
 
