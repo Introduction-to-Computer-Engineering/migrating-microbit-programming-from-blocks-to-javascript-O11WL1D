@@ -162,7 +162,7 @@ The fitness gram pacer pal program features the following constructs
 
 
 ## v.07
-[conditionals]()
+[conditionals](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/coordinates%20program%20%237)
 Description:  Utilizing the micro bit's led coordinate interface to randomly toggle each led and to make a smiley face.
 The A button activates led randomization and the B button toggles a smiley face. 
 
