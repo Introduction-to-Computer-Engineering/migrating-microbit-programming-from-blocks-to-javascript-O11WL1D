@@ -1,0 +1,11 @@
+//comment out the second line for fast start up of name__randomizer__500
+basic.showString("Press AB for a cool name :)");
+let first_name = ["dickle", "tom", "jeff", " AAAAA", "Randy","charlie Sheen","Professor","agent","Mc","Mr","ms","0w0"];
+let middle_name = [" hyde"," yeah","..."," Jeff","ride","Danger","harding"]
+let last_name = [ "Jeff"," sampletext"," lastname"," Baker"," Cote","the third","zedong"]
+input.onButtonPressed(Button.AB, function () {
+    basic.showString(first_name[Math.randomRange(0,11)])
+    basic.showString(middle_name[Math.randomRange(0, 6)])
+    basic.showString(last_name[Math.randomRange(0, 6)])
+})
+

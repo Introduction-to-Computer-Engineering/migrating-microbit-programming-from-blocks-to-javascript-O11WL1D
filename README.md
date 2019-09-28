@@ -187,6 +187,10 @@ Description: -sends out radio packets to other micro bits, which upon recieving 
 Press the A button to send out a packet containing the string "marco"  +random noise(not an error, I was getting bored)
 Press the B button to send out a packet containing the string "polo" 
 
+## v.11
+[arrays]()
+Description: -a name generator which randomly selects values in three name arrays and returns the result. 
+press AB to display a random name 
 
 
 
