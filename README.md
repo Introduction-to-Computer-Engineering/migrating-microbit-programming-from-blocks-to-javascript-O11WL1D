@@ -88,15 +88,18 @@ This assignment asks you to go through a [Intro to CS course with Blocks](https:
 
 _**Note:** Add your program descriptions below._
 
-### v0.1
+### v0.01
 
 --program__link_here--
 Description:  micro_pet#1.js turns the bcc micro bit into a nervious shifty character who endlessly scans the room for witnesses
  
 
-### v0.2
+### v0.02
 
-**[etc.]**
+--Program_link--
+Description : A program which depending on input from the a, b and ab buttons of the microbit, displays different variations of a smiling face and frowning
+face.   
+ 
 
 ## Designs
 
