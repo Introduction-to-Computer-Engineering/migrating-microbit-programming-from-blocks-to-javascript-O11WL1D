@@ -120,7 +120,7 @@ Desciption: A program which utilizes looping to toggle each led of the micro bit
 
 
 ## v.06
-###[Midterm project](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/Midterm%20project%20code%2C%20program%20%236)
+##[Midterm project](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/Midterm%20project%20code%2C%20program%20%236)
 
 ## Description:
 The fitness gram pacer pal program serves to turn the bbc Mircobit into a supplementary tool
@@ -133,12 +133,12 @@ of the AB button toggle. As the timer runs, its value is compared with the pacer
 
 
 
-##Brainstorm
+## Brainstorm
 
 -8 bit gpio_controlled ram module 
 (-pacer_test Stop watch 'with each iteration adds/displays new second')  <--- features all required aspects
 
-#Goal
+## Goal
 To create software for the bbc Microbit which both acts as both a scorekeeping device for the fitness gram pacer test
 and as a timing device. 
 
@@ -150,7 +150,7 @@ equal to 60, and if so the minute counter would be incremented. with the foundat
 add a statement which evaluates the value of minutes and assigns the lap counter to a predicted amount of laps. Finally, I added an
  input conditional statement which stops the timer when the B button is pressed.
 
-##Constructs
+## Constructs
 The fitness gram pacer pal program features the following constructs
 -looping
 -Variables
