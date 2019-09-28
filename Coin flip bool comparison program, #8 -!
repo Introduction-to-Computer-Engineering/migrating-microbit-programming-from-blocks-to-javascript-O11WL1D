@@ -1,0 +1,35 @@
+let b00l = 0;//
+let b00li0 = 0;//the two coins used in comparison
+let player2 = 0;
+let player1 = 0;
+
+
+
+
+
+
+    input.onButtonPressed(Button.A, function () {
+        
+    
+
+        b00l = Math.randomRange(0, 1)
+        b00li0 = Math.randomRange(0, 1)
+        if (b00l = b00li0) {
+            basic.showString("c1=c2")
+            player1 = player1 + 1;
+        } else {
+            basic.showString("c1 != c2")
+            player2 = player2 + 1;
+
+        }
+    })
+
+    
+    input.onButtonPressed(Button.AB, function () {
+        basic.showString("P1:")
+        basic.showNumber(player1)
+        basic.showString("p2:")
+        basic.showNumber(player2)
+    })
+
+
