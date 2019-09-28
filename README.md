@@ -86,8 +86,6 @@ This assignment asks you to go through a [Intro to CS course with Blocks](https:
 
 ## Tags
 
-_**Note:** Add your program descriptions below._
-
 ### v0.01
 
 [First micro bit program](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/micro%20pet%20program%2C%20project%20%231) 
@@ -115,17 +113,54 @@ b button to see the games result.
 
 ## v.05
 [iteration](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/Project%20%235%2C%20loops%2C%20traveling%20sprite%2C%20yeah)
-Desciption: A program which utilizes looping to toggle each led of the micro bit row by row in a sequental manner.    
+Desciption: A program which utilizes looping to toggle each led of the micro bit row by row in a sequental manner.
 
 
 
-## Designs
 
-_**Note:** Add your project designs below._
 
-### Midterm project
+## v.06
+###[Midterm project]()
 
-_**Note:** Add your project designs below._
+## Description:
+The fitness gram pacer pal program serves to turn the bbc Mircobit into a supplementary tool
+ for use in the nationally acclaimed fitness gram pacer test. The program acts as both a timer, and a score keeping 
+device for the number of laps or levels achieved in the test. Pressing the A button after powering up the bbc Microbit
+ will result in a timer to begin, which either displays the elapsed time in seconds or in minutes depending on the state 
+of the AB button toggle. As the timer runs, its value is compared with the pacer test's various level benchmarks and when
+ the duration requirements of any given level are fulfilled, the program’s score variables are updated. Pressing the B button
+ will stop the timer and display the users score in laps. 
+
+
+
+##Brainstorm
+
+-8 bit gpio_controlled ram module 
+(-pacer_test Stop watch 'with each iteration adds/displays new second')  <--- features all required aspects
+
+#Goal
+To create software for the bbc Microbit which both acts as both a scorekeeping device for the fitness gram pacer test
+and as a timing device. 
+
+## Design process
+The first step in my design process was to set up the timing code which would keep track of the elapsed time in both minutes and
+ seconds.To do so I created a loop which would increment a seconds variable, and some code which would add a second long delay 
+between each iteration of the loop. Afterwards, to implement minutes I added a conditional which would check to see if seconds was 
+equal to 60, and if so the minute counter would be incremented. with the foundation of the program established, I was able to then 
+add a statement which evaluates the value of minutes and assigns the lap counter to a predicted amount of laps. Finally, I added an
+ input conditional statement which stops the timer when the B button is pressed.
+
+##Constructs
+The fitness gram pacer pal program features the following constructs
+-looping
+-Variables
+-Conditional statements
+-Algorithms
+
+
+
+
+
 
 #### Goal
 

@@ -1,0 +1,41 @@
+let count_seconds = 0;
+let count_minutes = 0;
+let conditional_list = [1, 7, 2, 15, 3, 23, 4, 32, 5, 41, 6, 51, 7, 65, 8, 78, 9, 85, 10, 94, 12, 106, 13, 118, 14, 131, 15, 144, 16, 157, 18, 185, 19, 215, 21, 231, 22, 247]
+//an attempt to make long strings of if statements less trashy,
+//Im just running low on time
+let count_lap = 0;
+let hh = 0;
+let feed_back_type=0;
+
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(3);
+    basic.showNumber(2);
+    basic.showNumber(1);
+    basic.showString("Go!");
+    for (let i = 1; i != 0;) {
+        basic.pause(1200)
+        input.onButtonPressed(Button.AB, function () {
+            if(feed_back_type){feed_back_type=0}else{feed_back_type=1}
+        })
+        if (count_seconds != 60) { count_seconds += 1 }
+        else { count_seconds = 0; count_minutes += 1; }
+        //console.log("minutes")
+        //console.log(count_minutes + "")
+        if (feed_back_type) { basic.showNumber(count_minutes)}else{basic.showNumber(count_seconds)}
+        for (let j = 0; j < 42; j = j + 2) {
+
+            if (conditional_list[j] == count_minutes) { count_lap = conditional_list[j + 1] }
+
+
+        }
+        //console.log("lap count")
+        //console.log("" + count_lap)
+        //For testing purposes, ignore
+        input.onButtonPressed(Button.B, function () {
+            i = 0;
+            basic.showString("score:"); basic.showNumber(count_lap)
+        })
+
+
+    }
+})  
