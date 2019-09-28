@@ -176,7 +176,7 @@ Pressing the AB button will display the two players scores.
 
 
 ## v.09
-[Binary]()
+[Binary](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/Decimal%20to%20binary%20converter%2C%20project%20%20%239)
 Description: A program which converts user selected decimal values to binary, 
 On start: press the A and B buttons to cycle through a value from 0 to 255,
 To see binary equilivant starting from the least significant bit, press the AB button
