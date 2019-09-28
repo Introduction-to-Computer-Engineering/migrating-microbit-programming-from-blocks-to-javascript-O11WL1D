@@ -98,8 +98,15 @@ Description:  micro_pet#1.js turns the bcc micro bit into a nervious shifty char
 
 --Program_link--
 Description : A program which depending on input from the a, b and ab buttons of the microbit, displays different variations of a smiling face and frowning
-face.   
+face. Press A for smile variation, B for frown variation, and AB for random variation.   
  
+## v0.03
+
+--program_link--
+Description: Scorekeeping program which records the score of two players + amount of ties. Press A to increment/display player one score, B to 
+increment/display player 2 score, and AB to record/display ties   
+
+
 
 ## Designs
 
