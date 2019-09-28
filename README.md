@@ -102,6 +102,9 @@ face. Press A for smile variation, B for frown variation, and AB for random vari
  
 
 ## v0.03
+[Variables]()
+Description: Scorekeeping program which records the score of two players + amount of ties. Press A to increment/display player one score, B to 
+increment/display player 2 score, and AB to record/display ties   
 
 
 ## v0.04
