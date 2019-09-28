@@ -188,7 +188,7 @@ Press the A button to send out a packet containing the string "marco"  +random n
 Press the B button to send out a packet containing the string "polo" 
 
 ## v.11
-[arrays]()
+[arrays](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/Activity%20%2311%2C%20arrays%2C%20random%20name%20generator)
 Description: -a name generator which randomly selects values in three name arrays and returns the result. 
 press AB to display a random name 
 
