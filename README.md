@@ -159,7 +159,7 @@ The fitness gram pacer pal program features the following constructs
 
 
 
-
+## --------------------------------------------------------------------------------
 
 ## v.07
 [conditionals](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/coordinates%20program%20%237)
