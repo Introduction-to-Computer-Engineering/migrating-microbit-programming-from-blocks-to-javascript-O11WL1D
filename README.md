@@ -193,7 +193,7 @@ Description: -a name generator which randomly selects values in three name array
 press AB to display a random name 
 
 
-## --------------------------------------------- V.12, [Final project](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/Final%20project%2C%20memory--letter%20storage--transmission)-----------------------------------------
+## --------------------------------------------- V.12, [Final project](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/Final%20project%2C%20memory--letter%20storage--transmission)---------------------
 ## Description:
 The data array program stores ascii, decimal or binary values in an array of 25 elements, which are each individually
 represented by the bbc's 25 leds. The program allows users to navigate, alter and view the values of each led/position as well as transmit
@@ -217,7 +217,7 @@ specifyied xy position. With one last shake, the user is brought back to operati
 -Gpio controlled memory module --> would need to use serial communication, and I really dont have time to learn how to do that
 -wii type block memory- might work
 ---inspired by the wii game systems memory storage, as seen in the link https://www.youtube.com/watch?v=6W1a-PFPUJs
-[Operating modes ideas]()
+[Operating modes ideas](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/IMG_20190928_222123175.jpg)
 [Navigation system idea]()
 
 ## Goal:
