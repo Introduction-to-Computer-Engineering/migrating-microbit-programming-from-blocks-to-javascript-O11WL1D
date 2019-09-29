@@ -193,7 +193,7 @@ Description: -a name generator which randomly selects values in three name array
 press AB to display a random name 
 
 
-## --------------------------------------------- V.12, [Final project]()----------------------------------------------------------
+## --------------------------------------------- V.12, [Final project](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/Final%20project%2C%20memory--letter%20storage--transmission)-----------------------------------------
 ## Description:
 The data array program stores ascii, decimal or binary values in an array of 25 elements, which are each individually
 represented by the bbc's 25 leds. The program allows users to navigate, alter and view the values of each led/position as well as transmit
@@ -239,5 +239,5 @@ store each value in a array for later assignment. From there, I added the option
 
 ## contructs:
 Making, Algorithms, Variables,Conditionals,iteration,Coordinates,booleans,binary,Radio,arrays
-## -----------------------------------------------------------------------------------------------------------------
+## ---------------------------------------------------------------------
 
