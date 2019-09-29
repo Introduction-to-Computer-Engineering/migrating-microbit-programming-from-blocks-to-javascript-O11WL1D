@@ -193,19 +193,51 @@ Description: -a name generator which randomly selects values in three name array
 press AB to display a random name 
 
 
+## --------------------------------------------- V.12, [Final project]()----------------------------------------------------------
+## Description:
+The data array program stores ascii, decimal or binary values in an array of 25 elements, which are each individually
+represented by the bbc's 25 leds. The program allows users to navigate, alter and view the values of each led/position as well as transmit
+their contents to other microbits.
 
-#### Goal
+In operating mode 0 the user is able to navigate from one led or memory block to the other 
+by using the A Button to go left and the B button to go right. Pressing both A and B will advance the toggled led/memory position to the 
+next row. By shaking the Micro bit, the user is able to access operating mode 1, which if either the A or B button is pressed while active,
+the microbit will show the ascii representation of the value stored in said position. Pressing AB once will display the decimal value, and pressing ab 
+once more will show the binary representation of the value starting from the least significant bit. Shaking the micro bit again will take 
+the user to operating mode 2, where the user is able to edit the value stored in the current position. Pressing the A and B buttons in the 
+mode will cycle through all of the possible ascii values starting from 97 and ending in 127. When AB is pressed, the previously seen 
+ascii value will be assigned to the current position. In mode 3, the User can transmit the value, the x coordinates and y coordinates of the
+current led/memory position to other microbits via radio. Upon recieving radio packets, the intercepted value is assigned to the 
+specifyied xy position. With one last shake, the user is brought back to operating mode #0
 
-**[your short description]**
+    
 
-#### Design process
 
-**[your sketches, the things you tried, the questions you asked yourself, the answers, the sticking points, the iterations, the restarts, the final version]**
+## Brainstorm:
+-Gpio controlled memory module --> would need to use serial communication, and I really dont have time to learn how to do that
+-wii type block memory- might work
+---inspired by the wii game systems memory storage, as seen in the link https://www.youtube.com/watch?v=6W1a-PFPUJs
+[Operating modes ideas]()
+[Navigation system idea]()
 
-#### JS Constructs & objects
+## Goal:
+To design and create software for the Bbc microbit which incorporates all of the concepts previously taught concepts and a led positioning system. 
 
-**[which JavaScript features you used in the implementation of your project idea]**
 
-### Final project
 
-**[etc.]**
+## Design process
+To lay the foundation for the rest of my program the first thing I made was the led/array navigation system. Javascript didn't feature multidemensional arrays, so 
+to work around this I used a standard array of 25 items and used the following expression to partition each element into 5 rows of 5 : memory[(y*5)+x]. Afterwards, I started designing 
+a system which allowed the user to select ascii values from 97-127, and implemented a feature that set the value of the current position to the users selected value. Unfortunately, this 
+is where I began to have problems. Initally when I designed the program I made it so that each phase was nested in the execution block of the AB button. However since the a-b inputs of the
+different phases suddenly started conflicting with each other, I decided that It would be best If I had only one input for each button and a conditional statement for each phase.
+after that issue was fixed, I added a feature which would transmit the xy coordinates and the value of the current position, and some code which upon intercepting radio packets would
+store each value in a array for later assignment. From there, I added the options to view each value in decimal, and in binary.  
+
+
+
+
+## contructs:
+Making, Algorithms, Variables,Conditionals,iteration,Coordinates,booleans,binary,Radio,arrays
+## -----------------------------------------------------------------------------------------------------------------
+

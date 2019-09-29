@@ -1,0 +1,160 @@
+radio.setGroup(1)
+let y = 0
+let x = 0
+let Interface = 0
+let ascii = 0
+let memory: number[] = []
+memory = [25]
+ascii = 97
+memory[24] = 99
+let rad_item = [3]
+let rad_count = 0
+led.toggle(x, y)
+let ussr_inputii;
+let rem;
+let x_con;
+let state = 0;
+
+
+
+
+input.onButtonPressed(Button.A, function () {
+    if (Interface == 0) {
+        led.toggle(x, y)
+        if (x != 0) {
+            x += 0 - 1
+        }
+        led.toggle(x, y)
+    }
+    if (Interface == 1) {
+        basic.showString(String.fromCharCode(memory[y * 5 + x]))
+        basic.showString("")
+
+    }
+    if (Interface == 2) {
+        if (ascii != 97) {
+            ascii += 0 - 1
+        }
+        basic.showString(String.fromCharCode(ascii))
+        basic.showString("")
+
+    }
+    if (Interface == 3) {
+        radio.sendNumber(memory[y * 5 + x])
+        radio.sendNumber(x)
+        radio.sendNumber(y)
+
+    }
+
+})
+input.onButtonPressed(Button.B, function () {
+    if (Interface == 0) {
+        led.toggle(x, y)
+        if (x != 4) {
+            x += 1
+        }
+        led.toggle(x, y)
+    }
+    if (Interface == 1) {
+        basic.showString(String.fromCharCode(memory[y * 5 + x]))
+        basic.showString("")
+
+    }
+    if (Interface == 2) {
+        if (ascii != 122) {
+            ascii += 1
+        }
+        basic.showString(String.fromCharCode(ascii))
+        basic.showString("")
+
+    }
+
+    if (Interface == 3) {
+
+        radio.sendNumber(x)
+        radio.sendNumber(y)
+        radio.sendNumber(memory[y * 5 + x])
+    }
+
+})
+input.onButtonPressed(Button.AB, function () {
+    if (Interface == 0) {
+        led.toggle(x, y)
+        if (y == 4) {
+            y = 0
+        } else {
+            y += 1
+        }
+        led.toggle(x, y)
+    }
+
+
+
+
+    if (Interface == 1) {
+
+        state = state + 1
+        console.log("" + state)
+        if (state == 2) { state = 0 }
+        if (state == 0) {
+            x_con = 1;
+            ussr_inputii = memory[y * 5 + x];
+            for (; x_con != 0;) {
+                rem = (ussr_inputii % 2)
+                if (rem == 1) {
+                    basic.showString(" 1");
+                    ussr_inputii = (ussr_inputii / 2) - .5
+                }
+                else { basic.showString(" 0"); ussr_inputii = ussr_inputii / 2 }
+                if (ussr_inputii == 0) { x_con = 0 }
+            }
+        }
+        if (state == 1) { basic.showNumber(memory[y * 5 + x]) }
+
+
+
+    }
+
+    if (Interface == 2) {
+        memory[y * 5 + x] = ascii
+    }
+    if (Interface == 3) { x = 0; y = 0; }
+
+})
+input.onGesture(Gesture.Shake, function () {
+    Interface += 1
+
+    if (Interface == 4) {
+        Interface = 0
+        basic.showNumber(Interface)
+        basic.showString("")
+        led.toggle(x, y)
+    }
+    else { basic.showNumber(Interface) }
+
+})
+
+
+
+
+radio.onReceivedNumber(function (receivedNumber: number) {
+    rad_item[rad_count] = receivedNumber
+    //console.log("rad_count:"); console.log("" + rad_count)
+    //console.log("" + rad_item[rad_count])
+    rad_count += 1
+    if (rad_count == 3) {
+        rad_count = 0;
+        x = rad_item[0]
+        y = rad_item[1]
+        memory[y * 5 + x] = rad_item[2]
+
+        basic.showString("N")
+        basic.showString("")
+        x = 0
+        y = 0
+    }
+
+})
+
+
+
