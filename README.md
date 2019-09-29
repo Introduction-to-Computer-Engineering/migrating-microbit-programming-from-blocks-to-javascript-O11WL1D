@@ -218,7 +218,7 @@ specifyied xy position. With one last shake, the user is brought back to operati
 -wii type block memory- might work
 ---inspired by the wii game systems memory storage, as seen in the link https://www.youtube.com/watch?v=6W1a-PFPUJs
 [Operating modes ideas](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/IMG_20190928_222123175.jpg)
-[Navigation system idea]()
+[Navigation system idea](https://github.com/Introduction-to-Computer-Engineering/migrating-microbit-programming-from-blocks-to-javascript-O11WL1D/blob/master/IMG_20190928_222132049.jpg)
 
 ## Goal:
 To design and create software for the Bbc microbit which incorporates all of the concepts previously taught concepts and a led positioning system. 
